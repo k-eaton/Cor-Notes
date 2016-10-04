@@ -20,6 +20,7 @@ gem 'jbuilder',                '2.4.1'
 group :development, :test do
   gem 'mysql2',  '0.4.4'
   gem 'byebug',  '9.0.0', platform: :mri
+end
 
 group :development do
   gem 'web-console',           '3.1.1'
