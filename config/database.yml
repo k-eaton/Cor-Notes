@@ -24,7 +24,11 @@ test:
   database: <%= Rails.application.secrets[:database][:name] %>
 
 production:
-  <<: *default
+  # <<: *default
+  # database: Cor-notes_production
+  # username: cornell
+  # password: <%= ENV['C-NOTES_DATABASE_PASSWORD'] %>
+  adapter: postgresql
   database: Cor-notes_production
-  username: cornell
-  password: <%= ENV['C-NOTES_DATABASE_PASSWORD'] %>
+  pool: 5
+  timeout: 5000
