@@ -25,6 +25,6 @@ test:
 
 production:
   <<: *default
-  database: production_db_name
+  database: <%= Rails.application.secrets[:database][:name] %>
   # username: cornell
   # password: <%= ENV['C-NOTES_DATABASE_PASSWORD'] %>
