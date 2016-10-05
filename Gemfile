@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.1p112'
 
 gem 'rails',                   '5.0.0.1'
 gem 'bcrypt',                  '3.1.11'
@@ -39,7 +40,7 @@ end
 group :production do
   # gem 'pg', '0.18.4'
   gem 'mysql2',  '0.4.4'
-  
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
