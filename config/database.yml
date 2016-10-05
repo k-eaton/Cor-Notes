@@ -26,5 +26,5 @@ test:
 production:
   <<: *default
   database: Cor-notes_production
-  username: cornell
-  password: <%= ENV['C-NOTES_DATABASE_PASSWORD'] %>
+  # username: cornell
+  # password: <%= ENV['C-NOTES_DATABASE_PASSWORD'] %>
