@@ -261,7 +261,6 @@ GEM
     passenger (5.0.30)
       rack
       rake (>= 0.8.1)
-    pg (0.18.4)
     pkg-config (1.1.7)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -369,7 +368,6 @@ DEPENDENCIES
   minitest-reporters (= 1.1.9)
   mysql2 (= 0.4.4)
   passenger (>= 5.0.25)
-  pg (= 0.18.4)
   puma (= 3.4.0)
   rails (= 5.0.0.1)
   rails-controller-testing (= 0.1.1)
