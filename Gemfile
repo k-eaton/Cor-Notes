@@ -17,6 +17,7 @@ gem 'coffee-rails',            '4.2.1'
 gem 'jquery-rails',            '4.1.1'
 gem 'turbolinks',              '5.0.1'
 gem 'jbuilder',                '2.4.1'
+gem "passenger",               ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
   gem 'mysql2',  '0.4.4'
