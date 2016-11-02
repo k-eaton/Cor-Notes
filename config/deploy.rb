@@ -1,19 +1,19 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-server "midnight", port: 22, roles: [:app, :web, :db], :primary => true
+server "66.234.216.96", user: 'cornell', roles: [:app, :web, :db], :primary => true
 
 set :repo_url, 'https://github.com/k-eaton/Cor-Notes.git'
 set :application, 'cor-notes'
-set :user, 'cornell'
-set :scm_username, "cornell"
+# set :user, 'cornell'
+# set :scm_username, "cornell"
 # set :scm_passphrase, '2upl-6tG'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/data/cor-notes'
+set :deploy_to, '/data/cor-notes/code'
 
 # Default value for :scm is :git
 set :scm, :git
