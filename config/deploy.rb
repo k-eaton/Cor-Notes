@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-server "www.cor-notes.com", roles (:app, :web, :db), :primary => true
+server "www.cor-notes.com", roles {:app, :web, :db}, :primary => true
 
 set :repo_url, 'https://github.com/k-eaton/Cor-Notes.git'
 set :application, 'cor-notes'
