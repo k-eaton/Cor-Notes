@@ -1,12 +1,13 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-server "www.cor-notes.com", roles: [:app, :web, :db], :primary => true
+server "midnight", port: 22, roles: [:app, :web, :db], :primary => true
 
 set :repo_url, 'https://github.com/k-eaton/Cor-Notes.git'
 set :application, 'cor-notes'
-set :user, "cornell"
-set :scm_passphrase, "2upl-6tG"
+set :user, 'cornell'
+set :scm_username, "cornell"
+# set :scm_passphrase, '2upl-6tG'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -45,5 +46,5 @@ set :rails_env, "production"
 # Default value for keep_releases is 5
 set :keep_releases, 5
 
-default_run_options[:pty] = true
+# default_run_options[:pty] = true
 
