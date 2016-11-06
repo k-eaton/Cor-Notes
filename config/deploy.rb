@@ -33,7 +33,7 @@ set :rvm_type, :system
 
 # set :use_sudo, false
 
-# set :rails_env, "production"
+set :rails_env, "production"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -55,7 +55,7 @@ set :rvm_type, :system
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 5
 
 # default_run_options[:pty] = true
 
