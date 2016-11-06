@@ -3,7 +3,10 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server 'cor-notes.com', user: 'cornell', roles: %w{app db web} #, my_property: :my_value
+# server 'midnight', :app, :web, :db, :primary => true
+
+server 'midnight', user: 'cornell', roles: %w{app db web} #, my_property: :my_value
+set :deploy_to, '/data/cor-notes.com/code'
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 

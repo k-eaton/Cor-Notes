@@ -1,28 +1,39 @@
+# require 'capistrano/ext/multistage'
 # config valid only for current version of Capistrano
-lock '3.6.1'
+# lock '3.6.1'
 
-server "66.234.216.96", user: 'cornell', roles: [:app, :web, :db], :primary => true
+# server "midnight", user: 'cornell', roles: [:app, :web, :db], :primary => true
+# 66.234.216.96
 
-set :repo_url, 'https://github.com/k-eaton/Cor-Notes.git'
+# set :ssh_options, {
+#   auth_methods: ['publickey'],
+#   keys: ['~/.ssh/id_rsa']
+# }
+
 set :application, 'cor-notes'
-# set :user, 'cornell'
+set :scm, :git
+set :repo_url, 'https://github.com/k-eaton/Cor-Notes.git'
+# set :scm_passphrase, ""
+
+set :user, 'cornell'
 # set :scm_username, "cornell"
-# set :scm_passphrase, '2upl-6tG'
+set :rvm_type, :system
+
+# set :stages, ['staging', 'production']
+# set :default_stage, 'production'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/data/cor-notes/code'
+# set :deploy_to, '/data/cor-notes/code'
 
 # Default value for :scm is :git
-set :scm, :git
-set :branch, "master"
+# set :branch, "master"
 
+# set :use_sudo, false
 
-set :use_sudo, false
-
-set :rails_env, "production"
+# set :rails_env, "production"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -44,7 +55,7 @@ set :rails_env, "production"
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-set :keep_releases, 5
+# set :keep_releases, 5
 
 # default_run_options[:pty] = true
 
