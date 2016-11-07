@@ -18,6 +18,7 @@ set :repo_url, 'https://github.com/k-eaton/Cor-Notes.git'
 set :user, 'cornell'
 # set :scm_username, "cornell"
 set :rvm_type, :system
+set :passenger_rvm_ruby_version
 
 # set :stages, ['staging', 'production']
 # set :default_stage, 'production'
