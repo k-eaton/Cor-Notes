@@ -19,6 +19,8 @@ set :user, 'cornell'
 # set :scm_username, "cornell"
 set :rvm_type, :system
 set :passenger_rvm_ruby_version
+# set :passenger_restart_with_touch, true
+# set :passenger_restart_with_sudo, true
 
 # set :stages, ['staging', 'production']
 # set :default_stage, 'production'
