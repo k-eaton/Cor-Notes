@@ -6,7 +6,7 @@
 # server 'midnight', :app, :web, :db, :primary => true
 
 server 'midnight', user: 'cornell', roles: %w{app db web} #, my_property: :my_value
-set :deploy_to, '/data/cor-notes.com/code'
+set :deploy_to, '/var/www/cor-notes.com/code'
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
