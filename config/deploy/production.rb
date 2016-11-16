@@ -35,9 +35,6 @@ set :deploy_to, '/var/www/cor-notes.com/code'
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-config.serve_static_assets = true
-
-
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
