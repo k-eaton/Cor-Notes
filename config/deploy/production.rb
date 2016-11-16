@@ -7,6 +7,7 @@
 
 server 'midnight', user: 'cornell', roles: %w{app db web} #, my_property: :my_value
 set :deploy_to, '/var/www/cor-notes.com/code'
+
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
@@ -34,6 +35,7 @@ set :deploy_to, '/var/www/cor-notes.com/code'
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
+config.serve_static_assets = true
 
 
 # Custom SSH Options
